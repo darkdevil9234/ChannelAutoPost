@@ -40,10 +40,10 @@ except Exception as exc:
 @datgbot.on(events.NewMessage(pattern="/start"))
 async def _(event):
     await event.reply(
-        f"Hi `{event.sender.first_name}`!\n\nI am a channel auto-post bot!! Read /help to know more!\n\nI can be used in only two channels (one user) at a time. Kindly deploy your own bot.\n\n[More bots](https://t.me/its_xditya)..",
+        f"Hi `{event.sender.first_name}`!\n\nI am a channel auto-post bot!! Read /help to know more!\n\nI can be used in only two channels (one user) at a time. Kindly deploy your own bot.\n\n[More bots](https://t.me/DwayneJohnsonl)..",
         buttons=[
             Button.url("repo", url="https://github.com"),
-            Button.url("Developer", url="https://DwayneJohnsonl"),
+            Button.url("Developer", url="https://t.me/DwayneJohnsonl"),
         ],
         link_preview=False,
     )
@@ -90,5 +90,5 @@ async def _(event):
 
 
 log.info("Bot has started.")
-log.info("Do visit https://xditya.me !")
+log.info("Do visit https://t.me/DwayneJohnsonl !")
 datgbot.run_until_disconnected()
